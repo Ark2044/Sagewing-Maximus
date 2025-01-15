@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "middleware": {},
+  "functions": {
+    "/api/generateCode/route": {
+      "files": [
+        "server/middleware-build-manifest.js",
+        "server/middleware-react-loadable-manifest.js",
+        "server/next-font-manifest.js",
+        "server/interception-route-rewrite-manifest.js",
+        "prerender-manifest.js",
+        "server/edge-runtime-webpack.js",
+        "server/app/api/generateCode/route.js"
+      ],
+      "name": "app/api/generateCode/route",
+      "page": "/api/generateCode/route",
+      "matchers": [
+        {
+          "regexp": "^/api/generateCode$",
+          "originalSource": "/api/generateCode"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "environments": {
+        "previewModeId": "ae3d83730eecfd9d2273095e603c5177",
+        "previewModeSigningKey": "1c34146ea03b567261eb671e616f508b5d41263a9e6668bb2e9457f000211200",
+        "previewModeEncryptionKey": "fb1cfd51d1e611d3563ead4d49412ad679ab67f29aaaa7daa57f21cac5d7186d"
+      }
+    }
+  },
+  "sortedMiddleware": []
+}
